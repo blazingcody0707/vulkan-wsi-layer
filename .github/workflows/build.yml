@@ -19,11 +19,8 @@ jobs:
 
       - name: Build Vulkan WSI Layer
         run: |
-          mkdir -p build
-          cd build
-          cmake ..
-          make
-
+         cmake .
+         make 
       - name: Run Tests
         run: |
           # Adicione seus testes, se houver
